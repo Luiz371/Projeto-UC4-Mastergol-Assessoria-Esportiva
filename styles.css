@@ -1,0 +1,23 @@
+/* Hero (imagem de fundo da Home) */
+.hero {
+  background-image: url("/SiteMastergol/Midia/Gemini_Generated_Image_xxd5gkxxd5gkxxd5.png"); /* ajuste o caminho da sua imagem */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  color: white;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Ajustes gerais */
+section {
+  scroll-margin-top: 80px; /* evita que a navbar cubra o título */
+}
