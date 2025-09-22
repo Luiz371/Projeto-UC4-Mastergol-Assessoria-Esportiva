@@ -1,6 +1,6 @@
 /* Hero (imagem de fundo da Home) */
 .hero {
-  background-image: url("/SiteMastergol/Midia/Gemini_Generated_Image_xxd5gkxxd5gkxxd5.png"); /* ajuste o caminho da sua imagem */
+  background-image: url("Midia/Gemini_Generated_Image_xxd5gkxxd5gkxxd5.png"); /* ajuste o caminho da sua imagem */
   background-size: cover;
   background-position: center;
   height: 100vh;
