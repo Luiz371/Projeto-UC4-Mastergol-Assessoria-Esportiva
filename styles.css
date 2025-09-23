@@ -1,12 +1,46 @@
+.navbar {
+  background-color: hsla(207, 100%, 57%, 0.889) !important;
+}
+
+body {
+  padding-top: 100px; /* ajuste conforme a altura real da navbar */
+}
+
+.navbar-brand img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Botão azul Mastergol */
+.btn-mastergol {
+  background-color: #004aad; /* tom de azul parecido com a logo */
+  color: #fff; /* cor do texto */
+  border: none;
+  transition: background-color 0.3s;
+}
+
+.btn-mastergol:hover {
+  background-color: #003080; /* azul mais escuro ao passar o mouse */
+}
+
+
+
+
 /* Hero (imagem de fundo da Home) */
 .hero {
+<<<<<<< HEAD
   background-image: url("Midia/Gemini_Generated_Image_xxd5gkxxd5gkxxd5.png"); /* ajuste o caminho da sua imagem */
+=======
+  background-image: url("Midia/Gemini_Generated_Image_n3nejkn3nejkn3ne.png");
+>>>>>>> 6de0d4b (Aprimoramento visual)
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  color: white;
+    height: 100vh; /* ocupa toda a tela */
+
+  color:  white;
   text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
 }
+
 
 .hero-overlay {
   background: rgba(0, 0, 0, 0.5);
@@ -15,9 +49,52 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+
 }
 
 /* Ajustes gerais */
 section {
   scroll-margin-top: 80px; /* evita que a navbar cubra o título */
 }
+
+body {
+  padding-top: 85px; /* Ajuste maior, equivalente à altura real da navbar */
+}
+
+section {
+  scroll-margin-top: 100px; /* Mesma altura do padding-top para rolagem suave */
+}
+
+/* Navbar: fundo azul da Mastergol */
+.navbar {
+  background-color: #249CFF !important; /* azul da logo */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Marca (Mastergol) */
+.navbar-brand {
+  color: #ffffff !important; /* branco */
+  font-weight: bold;
+}
+
+/* Links da navbar */
+.navbar .nav-link {
+  color: #ffffff !important; /* branco */
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+/* Hover nos links */
+.navbar .nav-link:hover {
+  color: #003080 !important; /* azul mais escuro */
+}
+
+/* Botão do menu em telas pequenas (hamburger) */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/ %3E%3C/svg%3E");
+}
+
