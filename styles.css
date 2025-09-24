@@ -1,7 +1,7 @@
 /* Navbar */
 .navbar {
-  background-color: #249CFF !important;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background-color: #249cff !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-brand {
@@ -42,6 +42,7 @@
 /* Hero */
 .hero {
   background-image: url("Midia/Gemini_Generated_Image_n3nejkn3nejkn3ne.png");
+  background-image: url("Midia/Gemini_Generated_Image_n3nejkn3nejkn3ne.png");
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -63,7 +64,18 @@ body {
   padding-top: 85px;
 }
 
+/* Geral */
+body {
+  padding-top: 85px;
+}
+
 section {
+  scroll-margin-top: 100px;
+}
+
+.navbar-brand img {
+  max-width: 100%;
+  height: auto;
   scroll-margin-top: 100px;
 }
 

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formulário Completo Mastergol</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center fw-bold" href="index.html">
+        <img src="Midia/Gemini_Generated_Image-Mastergol-Logo4.png" alt="Logo Mastergol" width="60" height="55" class="me-2">
+        Mastergol Assessoria Esportiva
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="index.html#inicio">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#quem-somos">Quem Somos</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#servicos">Serviços</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contato">Contato</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Formulário Completo -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">Formulário de Inscrição e Avaliação</h2>
+      <p class="text-center mb-5">Preencha todas as informações para participar do processo seletivo da Mastergol.</p>
+
+      <form action="https://seuservidor.com/receber-formulario" method="POST">
+
+        <!-- Seção 1: Dados Pessoais -->
+        <div class="border rounded p-4 mb-4 shadow-sm">
+          <h5 class="mb-3">Dados Pessoais</h5>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="nome" class="form-label">Nome completo</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-person-fill"></i></span>
+                <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome" required>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="idade" class="form-label">Idade</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-calendar-fill"></i></span>
+                <input type="number" class="form-control" id="idade" name="idade" placeholder="Sua idade" required>
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="nascimento" class="form-label">Data de nascimento</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-calendar-date-fill"></i></span>
+                <input type="date" class="form-control" id="nascimento" name="nascimento" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="telefone" class="form-label">Telefone / WhatsApp</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-telephone-fill"></i></span>
+                <input type="text" class="form-control" id="telefone" name="telefone" placeholder="(99) 99999-9999" required>
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="email" class="form-label">E-mail</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                <input type="email" class="form-control" id="email" name="email" placeholder="seu@email.com" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label class="form-label">Sexo</label>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="sexo" id="masculino" value="Masculino" required>
+                <label class="form-check-label" for="masculino">Masculino</label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="sexo" id="feminino" value="Feminino">
+                <label class="form-check-label" for="feminino">Feminino</label>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label for="cep" class="form-label">Endereço completo</label>
+              <input type="text" class="form-control" id="cep" name="cep" placeholder="Digite o CEP" required>
+              <label for="endereco" class="form-label"></label>
+
+              <input type="text" class="form-control" id="endereco" name="endereco" placeholder="Cidade" required>
+              
+            </div>
+          </div>
+        </div>
+
+        <!-- Seção 2: Informações de Futebol -->
+        <div class="border rounded p-4 mb-4 shadow-sm">
+          <h5 class="mb-3">Informações de Futebol</h5>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label for="posicao" class="form-label">Posição favorita em campo</label>
+              <div class="input-group">
+                <span class="input-group-text"><i class="bi bi-flag-fill"></i></span>
+                <select class="form-select" id="posicao" name="posicao" required>
+                  <option value="">Selecione</option>
+                  <option value="goleiro">Goleiro</option>
+                  <option value="zagueiro">Zagueiro</option>
+                  <option value="lateral">Lateral</option>
+                  <option value="volante">Volante</option>
+                  <option value="meia">Meia</option>
+                  <option value="atacante">Atacante</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Já treinou em alguma escolinha ou clube?</label>
+              <select class="form-select" name="treino" required>
+                <option value="">Selecione</option>
+                <option value="nao">Não</option>
+                <option value="menos_de_1_ano">Menos de 1 ano</option>
+                <option value="1_2_anos">1-2 anos</option>
+                <option value="3_5_anos">3-5 anos</option>
+                <option value="mais_de_5_anos">Mais de 5 anos</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="mb-3">
+            <label for="historicoCompeticoes" class="form-label">Participou de campeonatos ou competições? (Se sim, quais)</label>
+            <textarea class="form-control" id="historicoCompeticoes" name="historicoCompeticoes" rows="3"></textarea>
+          </div>
+        </div>
+
+        <!-- Seção 3: Processo Seletivo / Bolsa -->
+        <div class="border rounded p-4 mb-4 shadow-sm">
+          <h5 class="mb-3">Processo Seletivo / Bolsa</h5>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label class="form-label">Deseja concorrer a bolsa 100%?</label>
+              <select class="form-select" name="bolsa" required>
+                <option value="">Selecione</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Está ciente de que o processo seletivo avaliará potencial e condições financeiras?</label>
+              <select class="form-select" name="conscienteProcesso" required>
+                <option value="">Selecione</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+              </select>
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="deslocamento" class="form-label">Como se deslocaria até a sede da Mastergol para treinos?</label>
+            <input type="text" class="form-control" id="deslocamento" name="deslocamento" placeholder="Ex: transporte próprio, responsável, ônibus" required>
+          </div>
+        </div>
+
+        <!-- Seção 4: Condição Física / Motivação -->
+        <div class="border rounded p-4 mb-4 shadow-sm">
+          <h5 class="mb-3">Condição Física e Motivação</h5>
+          <div class="mb-3">
+            <label for="condicaoFisica" class="form-label">Descreva sua condição física atual</label>
+            <textarea class="form-control" id="condicaoFisica" name="condicaoFisica" rows="3" required></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="lesoes" class="form-label">Tem alguma limitação física ou lesão?</label>
+            <textarea class="form-control" id="lesoes" name="lesoes" rows="2"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="motivacao" class="form-label">Motivação e objetivos no futebol</label>
+            <textarea class="form-control" id="motivacao" name="motivacao" rows="3" required></textarea>
+          </div>
+        </div>
+
+        <!-- Seção 5: Condições Financeiras -->
+        <div class="border rounded p-4 mb-4 shadow-sm">
+          <h5 class="mb-3">Condições Financeiras</h5>
+          <div class="mb-3">
+            <label for="condicaoFinanceira" class="form-label">Situação financeira da família (para avaliação de bolsa)</label>
+            <textarea class="form-control" id="condicaoFinanceira" name="condicaoFinanceira" rows="3" required></textarea>
+          </div>
+          <div class="row mb-3">
+            <div class="col-md-6">
+              <label class="form-label">Possui interesse em planos pagos caso não consiga bolsa?</label>
+              <select class="form-select" name="interessePlano">
+                <option value="">Selecione</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label">Autoriza avaliação das condições financeiras para concorrer à bolsa?</label>
+              <select class="form-select" name="autorizaAvaliacao" required>
+                <option value="">Selecione</option>
+                <option value="sim">Sim</option>
+                <option value="nao">Não</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seção 6: Autorização e Termos -->
+        <div class="border rounded p-4 mb-4 shadow-sm">
+          <h5 class="mb-3">Autorização e Termos</h5>
+          <div class="mb-3">
+            <label class="form-label">Concorda com os termos e condições da Mastergol?</label>
+            <select class="form-select" name="termos" required>
+              <option value="">Selecione</option>
+              <option value="sim">Sim</option>
+              <option value="nao">Não</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="responsavel" class="form-label">Caso menor de idade: nome e contato do responsável</label>
+            <input type="text" class="form-control" id="responsavel" name="responsavel" placeholder="Nome e telefone do responsável">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Aceita que fotos e vídeos possam ser usados para divulgação da escola?</label>
+            <select class="form-select" name="autorizacaoMidia" required>
+              <option value="">Selecione</option>
+              <option value="sim">Sim</option>
+              <option value="nao">Não</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Botão enviar -->
+        <div class="text-center mt-4">
+          <button type="submit" class="btn btn-primary btn-lg">Enviar Inscrição Completa</button>
+        </div>
+
+      </form>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <p class="mb-0">© 2025 Mastergol Assessoria Esportiva</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
