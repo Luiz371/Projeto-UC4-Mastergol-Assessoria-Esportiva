@@ -118,3 +118,18 @@ body.formulario-page {
 section {
   background: transparent;
 }
+
+.form-card h5 {
+  font-weight: bold;
+  color: #004aad;
+  border-left: 5px solid #249cff;
+  padding-left: 10px;
+  margin: 30px 0 20px 0;
+}
+
+.form-label {
+  font-size: 1.1rem;      /* um pouco maior que o normal */
+  font-weight: 600;       /* destaque sem ser exagerado */
+  color: #1e3a8a;         /* azul forte */
+  margin-bottom: 0.3rem;  /* aproxima o label do input */
+}
