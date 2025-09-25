@@ -4,6 +4,7 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
+
 .navbar-brand {
   color: #ffffff !important;
   font-weight: bold;
@@ -26,6 +27,8 @@
 .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/ %3E%3C/svg%3E");
 }
+
+
 
 /* Botão Mastergol */
 .btn-mastergol {
@@ -82,4 +85,36 @@ section {
 .navbar-brand img {
   max-width: 100%;
   height: auto;
+}
+
+/* garante que html/body ocupem 100% */
+html, body {
+  height: 100%;
+}
+
+/* fundo global */
+body.formulario-page {
+  background-image: url("Midia/Gemini_Generated_Image_estadio_futebol-2.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #0a0a0a; /* fallback enquanto a imagem carrega */
+  min-height: 100vh;
+  padding-top: 85px; /* mantém seu espaçamento para navbar fixa */
+}
+
+/* mantém o card do formulário legível sobre o fundo */
+.form-card {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  padding: 30px;
+  max-width: 900px;
+  width: 100%;
+}
+
+/* força a seção a ter espaço visual e remover espaço branco */
+section {
+  background: transparent;
 }
