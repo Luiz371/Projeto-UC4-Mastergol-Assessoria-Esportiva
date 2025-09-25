@@ -34,7 +34,7 @@
   <!-- Formulário Completo -->
   
     <section class="py-5">
-  <div class="container">
+  <div class="d-flex justify-content-center">
     <div class="row justify-content-center">
       <div class="col-lg-10">
         
@@ -50,7 +50,7 @@
 
         <!-- Seção 1: Dados Pessoais -->
         <div class="border rounded p-4 mb-4 shadow-sm">
-          <h5><i class="bi bi-person-fill me-2"></i> Informações Pessoais</h5>
+          <h5 class="section-title"><i class="bi bi-person-fill me-2"></i> Informações Pessoais</h5>
           <div class="row">
             <div class="col-md-6 mb-3">
               <label for="nome" class="form-label">Seu nome completo</label>
@@ -61,6 +61,7 @@
             </div>
             <div class="col-md-3 mb-3">
               <label for="idade" class="form-label"></label>
+              <label for="nome" class="form-label">Seu nome completo</label>
               <div class="input-group">
                 <span class="input-group-text"><i class="bi bi-calendar-fill"></i></span>
                 <input type="number" class="form-control" id="idade" name="idade" placeholder="Sua idade" required>
@@ -94,20 +95,16 @@
 
           <div class="row mb-3">
             <div class="col-md-6">
-              <label class="form-label">Sexo</label>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="sexo" id="masculino" value="Masculino" required>
-                <label class="form-check-label" for="masculino">Masculino</label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="sexo" id="feminino" value="Feminino">
-                <label class="form-check-label" for="feminino">Feminino</label>
-              </div>
+                        <label for="sexo" class="form-label">Qual é o seu gênero de nascimento?</label>
+            <select id="sexo" name="sexo" class="form-select" required>
+              <option value="">Selecione</option>
+              <option value="masculino">Masculino</option>
+              <option value="feminino">Feminino</option>
+            </select>
             </div>
-            <!-- Seção: Endereço -->
-            
-            <h5><i class="bi bi-geo-alt-fill me-2"></i> Onde você mora</h5>
 
+            <!-- Seção: Endereço -->
+            <h5><i class="bi bi-geo-alt-fill me-2"></i> Onde você mora</h5>
             <div class="row g-3">
               <div class="col-md-3">
                 <label for="cep" class="form-label">CEP</label>
@@ -178,6 +175,25 @@
           </div>
         </div>
 
+        
+
+        <!-- Seção 4: Condição Física / Motivação -->
+        <div class="border rounded p-4 mb-4 shadow-sm">
+          <h5><i class="bi bi-heart-pulse-fill me-2"></i> Seu preparo e sua saúde</h5>
+          <div class="mb-3">
+            <label for="condicaoFisica" class="form-label">Descreva sua condição física atual</label>
+            <textarea class="form-control" id="condicaoFisica" name="condicaoFisica" rows="3" required></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="lesoes" class="form-label">Tem alguma limitação física ou lesão?</label>
+            <textarea class="form-control" id="lesoes" name="lesoes" rows="2"></textarea>
+          </div>
+          <div class="mb-3">
+            <label for="motivacao" class="form-label">Motivação e objetivos no futebol</label>
+            <textarea class="form-control" id="motivacao" name="motivacao" rows="3" required></textarea>
+          </div>
+        </div>
+
         <!-- Seção 3: Processo Seletivo / Bolsa -->
         <div class="border rounded p-4 mb-4 shadow-sm">
           <h5 class="mb-3">Processo Seletivo / Bolsa</h5>
@@ -202,23 +218,6 @@
           <div class="mb-3">
             <label for="deslocamento" class="form-label">Como se deslocaria até a sede da Mastergol para treinos?</label>
             <input type="text" class="form-control" id="deslocamento" name="deslocamento" placeholder="Ex: transporte próprio, responsável, ônibus" required>
-          </div>
-        </div>
-
-        <!-- Seção 4: Condição Física / Motivação -->
-        <div class="border rounded p-4 mb-4 shadow-sm">
-          <h5><i class="bi bi-heart-pulse-fill me-2"></i> Seu preparo e sua saúde</h5>
-          <div class="mb-3">
-            <label for="condicaoFisica" class="form-label">Descreva sua condição física atual</label>
-            <textarea class="form-control" id="condicaoFisica" name="condicaoFisica" rows="3" required></textarea>
-          </div>
-          <div class="mb-3">
-            <label for="lesoes" class="form-label">Tem alguma limitação física ou lesão?</label>
-            <textarea class="form-control" id="lesoes" name="lesoes" rows="2"></textarea>
-          </div>
-          <div class="mb-3">
-            <label for="motivacao" class="form-label">Motivação e objetivos no futebol</label>
-            <textarea class="form-control" id="motivacao" name="motivacao" rows="3" required></textarea>
           </div>
         </div>
 

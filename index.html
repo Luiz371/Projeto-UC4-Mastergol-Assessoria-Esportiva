@@ -12,6 +12,9 @@
     <!-- CSS separado -->
     <link rel="stylesheet" href="styles.css" />
   </head>
+  <!-- JS separado -->
+<script src="scripts.js"></script>
+
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
@@ -68,28 +71,39 @@
       </div>
     </section>
 
-    <!-- Quem Somos -->
-    <section id="quem-somos" class="py-5">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
-            <h2>Quem Somos</h2>
-            <p>
-              A Mastergol é uma assessoria esportiva dedicada a preparar jovens
-              para o futebol profissional, oferecendo apoio físico, psicológico
-              e estratégico.
-            </p>
-          </div>
-          <div class="col-md-6">
-            <img
-              src="Midia/Gemini_Generated_Image_e7hcrte7hcrte7hc.png"
-              alt="Equipe Mastergol"
-              class="img-fluid rounded shadow"
-            />
-          </div>
-        </div>
+    <!-- Quem Somos com efeito fade-in por parágrafo -->
+<section id="quem-somos" class="py-5 quem-somos-section position-relative">
+  <div class="overlay"></div> <!-- overlay escuro opcional -->
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-white">
+        <h2 class="fade-in">Quem Somos</h2>
+        <p class="fade-in">
+          Na Mastergol, transformamos o sonho de se tornar jogador de futebol profissional em realidade. Somos mais do que uma escolinha: somos a ponte entre a paixão pelo futebol e uma carreira de sucesso.
+        </p>
+        <p class="fade-in">
+          Oferecemos treinamento personalizado e acompanhamento completo, desenvolvendo habilidades técnicas, disciplina, foco e a mentalidade de campeão. Nosso compromisso é preparar a próxima geração de craques, dentro e fora dos campos.
+        </p>
+        <p class="fade-in">
+          Acreditamos no potencial de todos os jovens, especialmente aqueles em situação de vulnerabilidade, e trabalhamos para proporcionar oportunidades reais de crescimento e um futuro melhor.
+        </p>
+        <p class="fade-in">
+          Venha fazer parte da Mastergol e transforme seu talento em sucesso!
+        </p>
       </div>
-    </section>
+      <div class="col-md-6">
+        <img
+          src="Midia/Gemini_Generated_Image_e7hcrte7hcrte7hc.png"
+          alt="Equipe Mastergol"
+          class="img-fluid rounded shadow fade-in"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    
 
     <!-- Serviços -->
     <section id="servicos" class="py-5 bg-light">

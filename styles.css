@@ -133,3 +133,78 @@ section {
   color: #1e3a8a;         /* azul forte */
   margin-bottom: 0.3rem;  /* aproxima o label do input */
 }
+
+/* Destaque para títulos de seção */
+.section-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0f172a;             /* cinza escuro */
+  border-left: 4px solid #1e40af; /* barrinha azul lateral */
+  padding-left: 8px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Inputs arredondados e com foco estilizado */
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #076ae2;
+  transition: 0.2s;
+}
+
+.form-control:focus {
+  border-color: #2563eb;   /* azul vivo */
+  box-shadow: 0 0 6px rgba(37, 99, 235, 0.4);
+}
+
+/* Quem Somos - overlay opcional */
+.quem-somos-section {
+  background-image: url("Midia/fundo-treino.jpg"); /* imagem de fundo da seção */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 100px 0;
+}
+
+.quem-somos-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 34, 114, 0.866); /* escurece fundo para o texto */
+  z-index: 1;
+}
+
+.quem-somos-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+/* Efeito fade-in por parágrafo */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#quem-somos h2, #quem-somos p {
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+#quem-somos h2 {
+  font-weight: 700;  /* negrito */
+  font-size: 2rem;   /* maior destaque */
+  margin-bottom: 20px;
+}
+
+#quem-somos p {
+  font-size: 1.1rem;
+  line-height: 1.6;  /* mais fácil de ler */
+}
+
