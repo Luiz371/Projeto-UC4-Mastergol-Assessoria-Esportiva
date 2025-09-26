@@ -185,7 +185,7 @@ section {
 .fade-in {
   opacity: 0;
   transform: translateY(30px);
-  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+  transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
 .fade-in.visible {
@@ -207,4 +207,124 @@ section {
   font-size: 1.1rem;
   line-height: 1.6;  /* mais fácil de ler */
 }
+
+.services {
+  background-color: #dcf6ff; /* azul bem clarinho */
+  padding: 60px 20px; /* respiro interno */
+   font-size: 2.5rem;
+  font-weight: 800;
+  color: #00209e; /* azul da logo */
+  text-align: center;
+  margin-bottom: 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.service-card-advanced {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  transition: transform 10s, box-shadow 10s;
+ transition: transform 3s, box-shadow 3s;
+  opacity: 0;          /* inicia invisível */
+  transform: translateY(30px); /* inicia levemente deslocado para baixo */
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out, box-shadow 0.3s, transform 0.3s;
+
+}
+
+.service-card-advanced.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.service-card-advanced:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.service-card-advanced .card-img {
+  width: 100%;
+  display: block;
+  transition: transform 1s ease;
+}
+
+.service-card-advanced:hover .card-img {
+  transform: scale(1.1);
+}
+
+.service-card-advanced .brief-desc {
+  font-size: 0.95rem;
+  color: #333;
+  margin: 5px 10px;
+}
+
+.service-card-advanced .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 34, 114, 0.8);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  padding: 20px;
+}
+
+.service-card-advanced:hover .overlay {
+  opacity: 1;
+}
+
+.service-card-advanced .overlay h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.service-card-advanced .overlay p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.services-title {
+  padding-bottom: 35px;
+  font-weight: 700; /* negrito forte */
+  color: #2753d5;      /* preto bem contrastante */
+  /*text-shadow: 2px 2px 4px rgba(85, 85, 85, 0.5); /* sombra preta suave */
+  font-size: 35px;
+}
+
+.services-title-cards {
+  font-size: 25px;
+}
+
+.btn-services {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #004aad; /* azul da identidade */
+  color: #fff;
+  font-weight: 600;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s ease;
+  margin-top: 30px;
+  font-size: 25px;
+}
+
+.btn-services:hover {
+  background-color: #003080; /* azul mais escuro no hover */
+  transform: scale(1.05);    /* efeito leve de zoom */
+}
+
+
+
+
+
+
 
