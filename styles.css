@@ -163,7 +163,7 @@ section {
   background-size: cover;
   background-position: center;
   position: relative;
-  padding: 100px 0;
+  padding: 100px 0 40px 0; /* top 100px, bottom 40px */
 }
 
 .quem-somos-section .overlay {
@@ -210,7 +210,7 @@ section {
 
 .background-services-sustentavel {
   background-color: #e6f0ff; /* azul bem clarinho */
-  padding: 60px 20px; /* respiro interno */
+  padding: 10px 20px; /* reduz topo e mantém lateral */
    font-size: 2.5rem;
   font-weight: 800;
   color: #00209e; /* azul da logo */
@@ -298,6 +298,7 @@ section {
   color: #2753d5;      /* preto bem contrastante */
   /*text-shadow: 2px 2px 4px rgba(85, 85, 85, 0.5); /* sombra preta suave */
   font-size: 35px;
+  margin-top: 100px;
 }
 
 .services-title-cards {
@@ -327,11 +328,6 @@ section {
    SUSTENTABILIDADE / ODS
 ============================== */
 
-
-.title-ods {
-  margin-top: 60px;
-  margin-bottom: -1000px;
-}
 
 #sub-title-ods {
   text-align: center;
@@ -434,8 +430,36 @@ section {
   color: #249CFF; 
 }
 
+#sustentabilidade {
+  padding-top: 1rem; /* 16px */
+  padding-bottom: 60px; /* mantém espaço inferior agradável */
+}
 
 
+/* Remove padding extra da seção externa */
+.background-services-sustentavel {
+  padding-top: 0;   /* remove espaço superior */
+  padding-bottom: 40px; /* mantém espaçamento inferior */
+  background-color: #e6f0ff;
+}
 
+/* Remove margens desnecessárias do título e subtítulo */
+#sustentabilidade h2,
+#sustentabilidade h5,
+#sustentabilidade p {
+  margin-top: 0;
+  margin-bottom: 1rem; /* ajuste se quiser mais compacto */
+}
+
+/* Cards e títulos da seção */
+#sustentabilidade .cards-title {
+  margin-top: 0;
+}
+
+/* Remove margin automática do container dentro da seção (opcional) */
+#sustentabilidade .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
 
 
