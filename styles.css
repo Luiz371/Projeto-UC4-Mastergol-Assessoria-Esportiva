@@ -860,12 +860,14 @@ transition: transform .18s ease;
     text-align: center;
     color: #0d6efd;
     margin-bottom: 80px;
+    margin-top: 20px;
   }
   .plans {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 5px;
+    margin-bottom: 100px;
   }
   .plan {
     background-color: white;
@@ -1060,5 +1062,139 @@ a {
   transform: scale(1.05);
 }
 
+/* Site-Apresentação-Projeto */
 
+
+/* entrada - Historia */
+#quem-somos {
+  background-color: #2277ff;
+}
+
+#quem-somos h3 {
+  color: #2277ff;
+  text-align: center;
+}
+
+#quem-somos p {
+  color: #000000;
+}
+
+  .mvv-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s ease;
+  }
+
+  .mvv-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .mvv-section h3 {
+    color: #249cff;
+    margin-bottom: 15px;
+  }
+
+  .mvv-section p {
+    color: #555;
+    line-height: 1.7;
+  }
+
+  /* Estilo base dos cards */
+.mvv-section {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(152, 85, 85, 0.1);
+  transition: all 0.3s ease; /* suaviza a animação */
+  cursor: default;
+}
+
+/* Efeito hover */
+.mvv-section:hover {
+  transform: translateY(-10px); /* levanta o card */
+  box-shadow: 0 12px 20px rgba(0,0,0,0.2); /* sombra mais intensa */
+  background-color: #ffffff; /* muda levemente o fundo */
+}
+
+.title-valores {
+  color: #2365fd;
+  font-size: large;
+  text-decoration: underline;
+}
+
+.mvv-section {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.mvv-section h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  color: #249cff;
+  text-align: left; /* garante alinhamento à esquerda */
+}
+
+.mvv-section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify; /* deixa o texto justificado, alinhando à esquerda e direita */
+}
+
+.mvv-section ul {
+  
+  padding-left: 20px;
+  margin: 0;
+}
+
+.mvv-section ul li {
+  margin-bottom: 10px;
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify; /* mantém o alinhamento uniforme */
+}
+
+.valores-list {
+  list-style: none; /* remove os marcadores padrões */
+  padding-left: 0;
+}
+
+.valores-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px; /* espaço entre ícone e texto */
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.valores-list li i {
+  min-width: 25px; /* mantém todos os ícones alinhados */
+  font-size: 35px;
+  margin-right: 10px;
+
+}
+
+.heart {
+  color: #ff0000;
+}
+
+.handshake {
+  color: rgb(225, 207, 74);
+}
+
+.people {
+  color: #00b3ff;
+}
+
+.trophy {
+  color: #ffea00;
+}
 
