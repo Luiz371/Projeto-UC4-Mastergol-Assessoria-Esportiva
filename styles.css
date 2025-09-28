@@ -772,7 +772,7 @@ transition: transform .18s ease;
     transition: transform .18s ease;
   }
   .btn-join:hover{ transform: translateY(-3px); }
-
+    
   /* Responsividade */
   @media (max-width: 1000px){
     .depo-grid{ grid-template-columns: repeat(2, 1fr); padding: 0 10px; }
@@ -790,47 +790,57 @@ transition: transform .18s ease;
   .patrocinadores {
   text-align: center;
   padding: 40px 20px;
-  background: hsl(206, 100%, 89%); /* ou outra cor clara */
-  margin-top: 250px;
+  background: #314579; /* ou outra cor clara */
+  margin-top: 200px;
 }
+
+.patrocinadores-container {
+  display: flex;
+  flex-wrap: wrap;       /* permite que as logos quebrem linha se necessário */
+  justify-content: center; /* centraliza horizontalmente */
+  gap: 30px;             /* espaço entre cada logo */
+  margin-top: 40px;      /* espaço acima da seção */
+  margin-bottom: 40px;   /* espaço abaixo da seção */
+}
+
 
 .patrocinadores h3 {
   margin-bottom: 30px;
   font-size: 1.8rem;
-  color: #003080;
+  color: rgb(5, 55, 255);
 }
 
-.patrocinadores .logos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 40px;
-  align-items: center;
+.patrocinadores h4 {
+  color: white;
 }
 
-.patrocinadores .logos img {
-  max-width: 150px; /* mantém tamanho consistente */
-  height: auto;
+.patro-logo {
+  width: 150px;
+  height: 150px;
   object-fit: contain;
-  transition: transform 0.3s;
+  cursor: pointer;
+  transition: transform 0.3s, filter 0.3s, opacity 0.8s, transform 0.8s;
 }
 
-.patrocinadores .logos img:hover {
-  transform: scale(1.05);
-}
 
-.patrocinadores .logos img {
+
+/* Fade-in inicial */
+.fade-in {
   opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
+  transform: translateY(30px);
 }
 
-.patrocinadores .logos img.visible {
+/* Classe que aplica a animação de entrada */
+.fade-in.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-
+/* Hover funciona sempre */
+.patro-logo:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
   
 
 
