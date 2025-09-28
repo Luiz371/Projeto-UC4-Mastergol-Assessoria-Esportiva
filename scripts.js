@@ -18,4 +18,20 @@ document.addEventListener("scroll", () => {
       card.classList.add("visible");
     }
   });
+
+  const logos = document.querySelectorAll('.patrocinadores .logos img');
+
+function fadeInLogos() {
+  logos.forEach(logo => {
+    const top = logo.getBoundingClientRect().top;
+    const windowHeight = window.innerHeight;
+    if (top < windowHeight - 50) { // ajusta quando começar a aparecer
+      logo.classList.add('visible');
+    }
+  });
+}
+
+window.addEventListener('scroll', fadeInLogos);
+window.addEventListener('load', fadeInLogos);
+
 });
