@@ -4,7 +4,6 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-
 .navbar-brand {
   color: #ffffff !important;
   font-weight: bold;
@@ -28,8 +27,6 @@
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/ %3E%3C/svg%3E");
 }
 
-
-
 /* Botão Mastergol */
 .btn-mastergol {
   background-color: #004aad;
@@ -50,11 +47,11 @@
   background-position: center;
   height: 100vh;
   color: white;
-  text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
 }
 
 .hero-overlay {
-  background: rgba(0,0,0,0.5);
+  background: rgba(0, 0, 0, 0.5);
   height: 100%;
   display: flex;
   justify-content: center;
@@ -88,7 +85,8 @@ section {
 }
 
 /* garante que html/body ocupem 100% */
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -108,7 +106,7 @@ body.formulario-page {
 .form-card {
   background: #fff;
   border-radius: 15px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
   padding: 30px;
   max-width: 900px;
   width: 100%;
@@ -128,17 +126,17 @@ section {
 }
 
 .form-label {
-  font-size: 1.1rem;      /* um pouco maior que o normal */
-  font-weight: 600;       /* destaque sem ser exagerado */
-  color: #1e3a8a;         /* azul forte */
-  margin-bottom: 0.3rem;  /* aproxima o label do input */
+  font-size: 1.1rem; /* um pouco maior que o normal */
+  font-weight: 600; /* destaque sem ser exagerado */
+  color: #1e3a8a; /* azul forte */
+  margin-bottom: 0.3rem; /* aproxima o label do input */
 }
 
 /* Destaque para títulos de seção */
 .section-title {
   font-size: 1.3rem;
   font-weight: 700;
-  color: #0f172a;             /* cinza escuro */
+  color: #0f172a; /* cinza escuro */
   border-left: 4px solid #1e40af; /* barrinha azul lateral */
   padding-left: 8px;
   margin-top: 20px;
@@ -153,7 +151,7 @@ section {
 }
 
 .form-control:focus {
-  border-color: #2563eb;   /* azul vivo */
+  border-color: #2563eb; /* azul vivo */
   box-shadow: 0 0 6px rgba(37, 99, 235, 0.4);
 }
 
@@ -193,30 +191,31 @@ section {
   transform: translateY(0);
 }
 
-#quem-somos h2, #quem-somos p {
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+#quem-somos h2,
+#quem-somos p {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
 #quem-somos h2 {
-  font-weight: 700;  /* negrito */
-  font-size: 2rem;   /* maior destaque */
+  font-weight: 700; /* negrito */
+  font-size: 2rem; /* maior destaque */
   margin-bottom: 20px;
 }
 
 #quem-somos p {
   font-size: 1.1rem;
-  line-height: 1.6;  /* mais fácil de ler */
+  line-height: 1.6; /* mais fácil de ler */
 }
 
 .background-services-sustentavel {
   background-color: #e6f0ff; /* azul bem clarinho */
   padding: 10px 20px; /* reduz topo e mantém lateral */
-   font-size: 2.5rem;
+  font-size: 2.5rem;
   font-weight: 800;
   color: #00209e; /* azul da logo */
   text-align: center;
   margin-bottom: 40px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .service-card-advanced {
@@ -224,13 +223,13 @@ section {
   overflow: hidden;
   border-radius: 15px;
   cursor: pointer;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   transition: transform 10s, box-shadow 10s;
- transition: transform 3s, box-shadow 3s;
-  opacity: 0;          /* inicia invisível */
+  transition: transform 3s, box-shadow 3s;
+  opacity: 0; /* inicia invisível */
   transform: translateY(30px); /* inicia levemente deslocado para baixo */
-  transition: transform 0.6s ease-out, opacity 0.6s ease-out, box-shadow 0.3s, transform 0.3s;
-
+  transition: transform 0.6s ease-out, opacity 0.6s ease-out, box-shadow 0.3s,
+    transform 0.3s;
 }
 
 .service-card-advanced.visible {
@@ -240,7 +239,7 @@ section {
 
 .service-card-advanced:hover {
   transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
 .service-card-advanced .card-img {
@@ -295,7 +294,7 @@ section {
 .services-title {
   padding-bottom: 35px;
   font-weight: 700; /* negrito forte */
-  color: #2753d5;      /* preto bem contrastante */
+  color: #2753d5; /* preto bem contrastante */
   /*text-shadow: 2px 2px 4px rgba(85, 85, 85, 0.5); /* sombra preta suave */
   font-size: 35px;
   margin-top: 100px;
@@ -320,27 +319,35 @@ section {
 
 .button:hover {
   background-color: #003080; /* azul mais escuro no hover */
-  transform: scale(1.05);    /* efeito leve de zoom */
+  transform: scale(1.05); /* efeito leve de zoom */
 }
-
 
 /* ==============================
    SUSTENTABILIDADE / ODS
 ============================== */
-
 
 #sub-title-ods {
   text-align: center;
   font-size: 23px;
 }
 
-#sustentabilidade .intro p {
+#sustentabilidade .intro .paragrafo-ods {
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1rem;
   color: #333;
-  margin-top: 30px;
-  text-align: center;
+  margin-top: 20px;
+
+  display: flex; /* deixa ícone e texto lado a lado */
+  align-items: center; /* centraliza verticalmente */
+  gap: 8px; /* espaço entre ícone e texto */
+  text-align: left; /* texto alinhado à esquerda */
+  justify-content: flex-start;
+}
+
+.icon-paragraph {
+  font-size: 26px; /* tamanho do ícone */
+  min-width: 32px; /* reserva espaço fixo p/ alinhar */
 }
 
 #sustentabilidade .cards-title {
@@ -360,13 +367,13 @@ section {
   background: #fff;
   border-radius: 12px;
   padding: 1.5rem;
-  box-shadow: 0 4px 8px rgba(30,77,156,0.2);
+  box-shadow: 0 4px 8px rgba(30, 77, 156, 0.2);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 #sustentabilidade .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(30,77,156,0.3);
+  box-shadow: 0 8px 16px rgba(30, 77, 156, 0.3);
 }
 
 #sustentabilidade .card h3 {
@@ -389,45 +396,43 @@ section {
   padding-bottom: 0.5rem;
 }
 
-
-
-.cards { 
-  display: grid; 
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
-  gap: 20px; 
-  max-width: 900px; 
-  margin: 40px auto; 
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 40px auto;
 }
 
-.card-ods { 
-  background: #fff; 
-  border-radius: 12px; 
-  padding: 20px; 
-  text-align: center; 
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06); 
+.card-ods {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
 }
 
-.icon-paragraph { 
-  font-size: 40px; 
-  margin-right: 8px; 
-  vertical-align: middle; 
+.icon-paragraph {
+  font-size: 40px;
+  margin-right: 8px;
+  vertical-align: middle;
 }
 
-.icon-card { 
-  font-size: 56px; 
-  margin-bottom: 12px; 
+.icon-card {
+  font-size: 56px;
+  margin-bottom: 12px;
 }
 
-.icon-saude { 
-  color: #28a745; 
+.icon-saude {
+  color: #28a745;
 }
 
-.icon-educacao { 
-  color: #0d6efd; 
+.icon-educacao {
+  color: #0d6efd;
 }
 
-.icon-responsabilidade { 
-  color: #249CFF; 
+.icon-responsabilidade {
+  color: #249cff;
 }
 
 #sustentabilidade {
@@ -435,10 +440,9 @@ section {
   padding-bottom: 60px; /* mantém espaço inferior agradável */
 }
 
-
 /* Remove padding extra da seção externa */
 .background-services-sustentavel {
-  padding-top: 0;   /* remove espaço superior */
+  padding-top: 0; /* remove espaço superior */
   padding-bottom: 40px; /* mantém espaçamento inferior */
   background-color: #e6f0ff;
 }
@@ -460,6 +464,91 @@ section {
 #sustentabilidade .container {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+/* === Parágrafos com ícones - estrutura em duas colunas === */
+#sustentabilidade .intro .paragrafo-ods {
+  display: flex;
+  align-items: flex-start; /* alinha ícone ao topo do bloco de texto */
+  gap: 14px; /* espaço entre ícone e bloco de texto */
+  margin-bottom: 16px;
+  text-align: left; /* força alinhamento à esquerda no bloco */
+  justify-content: flex-start;
+}
+
+/* ícone (coluna esquerda) */
+#sustentabilidade .intro .paragrafo-ods .icon-paragraph {
+  font-size: 30px; /* ajuste o tamanho conforme necessário */
+  flex: 0 0 38px; /* reserva largura fixa, evita "grudar" */
+  line-height: 1; /* evita deslocamento vertical inesperado */
+  margin-top: 4px; /* ajuste fino: alinha ícone com o título */
+  color: inherit;
+}
+
+/* bloco de texto (coluna direita) */
+#sustentabilidade .intro .paragrafo-ods .paragrafo-texto {
+  flex: 1; /* ocupa o restante do espaço */
+  min-width: 0; /* importante para evitar overflow em flex */
+}
+
+/* título (força linha separada e espaço abaixo) */
+#sustentabilidade .intro .paragrafo-ods .paragrafo-texto .temas-paragrafos {
+  display: block;
+  margin: 0 0 6px 0;
+  font-weight: 600;
+  color: rgba(0, 102, 255, 0.9);
+  font-size: 1rem;
+}
+
+/* texto do parágrafo */
+#sustentabilidade .intro .paragrafo-ods .paragrafo-texto p {
+  margin: 0;
+  color: #333;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Ícones dos parágrafos */
+#sustentabilidade .intro .paragrafo-ods .icon-saude {
+  color: #28a745 !important; /* vermelho */
+}
+
+#sustentabilidade .intro .paragrafo-ods .icon-educacao {
+  color: #0d6efd !important; /* azul escuro */
+}
+
+#sustentabilidade .intro .paragrafo-ods .icon-responsabilidade {
+  color: #249cff !important; /* verde */
+}
+
+/* Aumentar ícones dos parágrafos */
+#sustentabilidade .intro .paragrafo-ods .icon-paragraph {
+  font-size: 43px !important; /* ajuste conforme preferir (padrão era ~22–26px) */
+  margin-top: 4px; /* ajusta alinhamento vertical */
+}
+
+/* Aumentar os títulos (strong) */
+#sustentabilidade .intro .paragrafo-ods .temas-paragrafos {
+  font-size: 1.2rem; /* maior que antes */
+  font-weight: 700; /* deixa mais destacado */
+  margin-bottom: 8px; /* espaço abaixo do título */
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  #sustentabilidade .intro .paragrafo-ods {
+    gap: 10px;
+  }
+  #sustentabilidade .intro .paragrafo-ods .icon-paragraph {
+    font-size: 32px !important; /* ajuste conforme preferir (padrão era ~22–26px) */
+    margin-top: 4px; /* ajusta alinhamento vertical */
+  }
+  #sustentabilidade .intro .paragrafo-ods .paragrafo-texto .temas-paragrafos {
+    font-size: 0.98rem;
+  }
+  #sustentabilidade .intro .paragrafo-ods .paragrafo-texto p {
+    font-size: 0.95rem;
+  }
 }
 
 
