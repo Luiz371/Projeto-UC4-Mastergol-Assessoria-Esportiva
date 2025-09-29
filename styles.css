@@ -201,15 +201,26 @@ section {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
 }
 
-#quem-somos h2 {
+#quem-somos-section h2 {
   font-weight: 700; /* negrito */
   font-size: 2rem; /* maior destaque */
   margin-bottom: 20px;
+  
 }
 
-#quem-somos p {
+#quem-somos-home2 {
+  color: #bce2ff;
+  margin-bottom: 10000px;
+}
+
+#quem-somos-home p {
   font-size: 1.1rem;
   line-height: 1.6; /* mais fácil de ler */
+  color: #ffffff;
+}
+
+#title-quem-somos-home {
+  color: #000000;
 }
 
 .background-services-sustentavel {
@@ -1104,6 +1115,9 @@ a {
     line-height: 1.7;
   }
 
+
+  
+
   /* Estilo base dos cards */
 .mvv-section {
   background-color: #ffffff;
@@ -1198,3 +1212,133 @@ a {
   color: #ffea00;
 }
 
+
+#quem-somos {
+  margin-top: 85px;
+}
+
+/* mantém todos os ícones alinhados */
+
+ #body-presentation {
+      font-family: Arial, sans-serif;
+      margin: 0px;
+      padding: 0;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+
+    .servicos-section-complets {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .servicos-section-complets h2 {
+      font-size: 2.2rem;
+      color: #249cff;
+      margin-bottom: 40px;
+    }
+
+    .servicos-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+
+    .card h3 {
+      margin: 15px;
+      font-size: 1.2rem;
+      color: #249cff;
+    }
+
+    .card .descricao {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease, padding 0.3s ease;
+      padding: 0 15px;
+      text-align: left;
+      font-size: 0.95rem;
+      color: #555;
+    }
+
+    .card.expanded .descricao {
+      max-height: 300px; /* altura suficiente para o texto */
+      padding: 15px;
+    }
+
+    .navegacao {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+    }
+
+    .navegacao button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #249cff;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .navegacao button:hover {
+      background: #1b7ecf;
+    }
+
+
+  /* Cards */
+.card {
+  width: 320px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  opacity: 0;                
+  transform: translateY(20px);
+  transition: all 0.3s ease;  /* animação mais rápida para hover */
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Hover dos cards */
+.card:hover {
+  transform: translateY(-5px) scale(1.03); /* levanta e dá zoom leve */
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+/* Card expandido (ao clicar) */
+.card.expanded {
+  background-color: #f5f5f5;
+}
+
+/* Fade-in quando visível */
+.card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+ 
