@@ -1223,8 +1223,8 @@ a {
       font-family: Arial, sans-serif;
       margin: 0px;
       padding: 0;
-      background: #f9f9f9;
-      color: #333;
+      background: #ddf6ff;
+      color: #000000;
     }
 
 
@@ -1235,7 +1235,7 @@ a {
 
     .servicos-section-complets h2 {
       font-size: 2.2rem;
-      color: #249cff;
+      color: #0867dc;
       margin-bottom: 40px;
     }
 
@@ -1253,6 +1253,7 @@ a {
       overflow: hidden;
       cursor: pointer;
       transition: transform 0.3s ease;
+      text-align: justify;
     }
 
     .card:hover {
@@ -1268,7 +1269,7 @@ a {
     .card h3 {
       margin: 15px;
       font-size: 1.2rem;
-      color: #249cff;
+      color: rgb(7, 84, 173);
     }
 
     .card .descricao {
@@ -1278,7 +1279,7 @@ a {
       padding: 0 15px;
       text-align: left;
       font-size: 0.95rem;
-      color: #555;
+      color: #000000;
     }
 
     .card.expanded .descricao {
@@ -1313,9 +1314,9 @@ a {
   width: 320px;
   padding: 15px;
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 15px;
   background-color: #fff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   opacity: 0;                
   transform: translateY(20px);
   transition: all 0.3s ease;  /* animação mais rápida para hover */
@@ -1331,7 +1332,7 @@ a {
 
 /* Card expandido (ao clicar) */
 .card.expanded {
-  background-color: #f5f5f5;
+  background-color: #99cedd90;
 }
 
 /* Fade-in quando visível */
