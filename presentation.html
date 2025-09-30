@@ -21,7 +21,7 @@
     ></script>
     <!-- JS separado -->
     <script src="scripts.js" defer></script>
-     <!-- CSS separado -->
+    <!-- CSS separado -->
     <link rel="stylesheet" href="styles.css" />
   </head>
 
@@ -65,7 +65,9 @@
               <a class="nav-link" href="#contato">Contato</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="presentation.html" target="_blank">Projeto Mastergol</a>
+              <a class="nav-link" href="presentation.html" target="_blank"
+                >Projeto Mastergol</a
+              >
             </li>
           </ul>
         </div>
@@ -73,99 +75,421 @@
     </nav>
 
     <!-- Seção Quem Somos -->
-<section id="quem-somos" class="quem-somos-section py-5">
+    <section id="quem-somos" class="quem-somos-section py-5">
+      <div class="container">
+        <!-- História -->
+        <div class="mvv-section fade-in mb-4">
+          <h3 classe="title-historiaMVV">História</h3>
+          <p>
+            Criada em 2017 por Leonardo Henrique, ex-goleiro do Paulista de
+            Jundiaí, Santos e Red Bull Bragantino, a assessoria nasceu com o
+            objetivo de oferecer oportunidades para jovens atletas de todas as
+            classes econômicas. Desde então, temos crescido de forma sólida,
+            tornando-nos referência no desenvolvimento de talentos no futebol
+            brasileiro, sempre prezando pela formação, disciplina e excelência.
+          </p>
+        </div>
+
+        <!-- Missão -->
+        <div class="mvv-section fade-in mb-4">
+          <h3>Missão</h3>
+          <p>
+            Formar cidadãos e atletas preparados para os desafios dentro e fora
+            dos campos. Investimos em avaliações técnicas, acompanhamento físico
+            e psicológico, e mantemos parcerias com clubes, empresários e
+            instituições de ensino, garantindo suporte completo para o
+            desenvolvimento de cada jovem talento.
+          </p>
+        </div>
+
+        <!-- Visão -->
+        <div class="mvv-section fade-in mb-4">
+          <h3>Visão</h3>
+          <p>
+            Ser referência nacional na formação de atletas, reconhecidos por
+            excelência, ética e resultados. Queremos criar oportunidades reais
+            para todos os atletas, independentemente da classe social,
+            tornando-nos modelo de desenvolvimento profissional e humano no
+            futebol.
+          </p>
+        </div>
+
+        <!-- Valores -->
+        <div class="mvv-section fade-in mb-4">
+          <h3>Valores</h3>
+          <p>
+            Priorizamos o compromisso com o desenvolvimento integral do atleta,
+            garantindo que cada jovem tenha a melhor oportunidade de sucesso.
+          </p>
+          <ul id="topicos-valores" class="valores-list">
+            <li>
+              <i class="fas fa-heart heart"></i
+              ><strong class="title-valores">Ética e transparência:</strong>
+              Atuamos de forma clara e honesta em todas as nossas atividades.
+            </li>
+            <li>
+              <i class="fas fa-handshake handshake"></i
+              ><strong class="title-valores">Respeito a todos:</strong>
+              Valorizamos o apoio familiar e os objetivos individuais de cada
+              atleta.
+            </li>
+            <li>
+              <i class="fas fa-users people"></i
+              ><strong class="title-valores">Inclusão e disciplina:</strong>
+              Promovemos oportunidades iguais e incentivamos a disciplina dentro
+              e fora dos campos.
+            </li>
+            <li>
+              <i class="fas fa-trophy trophy"></i
+              ><strong class="title-valores"
+                >Excelência e oportunidades:</strong
+              >
+              Buscamos sempre oferecer o melhor em treinamento, acompanhamento e
+              chances de crescimento.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- os 4 ps e cs -->
+    <section class="servicos-section-complets">
+      <h2>Nossos Serviços</h2>
+
+      <div class="servicos-container" id="servicosContainer">
+        <!-- Os cards serão inseridos aqui pelo JS -->
+      </div>
+
+      <div class="navegacao">
+        <button id="anterior">Anterior</button>
+        <button id="proximo">Próximo</button>
+      </div>
+    </section>
+
+    <section id="marketing">
+      <div><h2>Marketing Mastergol</h2></div>
+      <div class="marketing-cards">
+        <div class="card-marketing">
+          <div class="card-header" id="card-4c">4C</div>
+          <div class="card-content">
+            <ul>
+              <li>
+                <h4>Cliente – O jovem em primeiro lugar</h4>
+                <p>
+                  Na Mastergol, o cliente é mais que um aluno: é um talento em
+                  formação. Visitamos escolas, especialmente públicas, para
+                  identificar jovens com potencial. Cada atleta recebe atenção
+                  individual, respeitando seu ritmo e necessidades, para atingir
+                  o máximo do seu potencial, dentro e fora de campo.
+                </p>
+              </li>
+              <li>
+                <h4>Custo – Valor que gera oportunidades</h4>
+                <p>
+                  A Mastergol vai além de ser um investimento: ajudamos os
+                  jovens a se desenvolverem para alcançar uma carreira de
+                  destaque no futebol. Com treinos de qualidade, acompanhamento
+                  médico, nutricional e psicológico, além de bolsas integrais
+                  para quem precisa, mostramos que o verdadeiro valor está nas
+                  experiências, oportunidades e conquistas do atleta.
+                </p>
+              </li>
+              <li>
+                <h4>Conveniência – Estrutura que facilita a jornada</h4>
+                <p>
+                  Acesso simples e sem barreiras: captação em escolas,
+                  inscrições online, formulários práticos e horários acessíveis.
+                  Tudo planejado para que o foco do atleta esteja no crescimento
+                  e desenvolvimento.
+                </p>
+              </li>
+              <li>
+                <h4>Comunicação – Conexão que fortalece</h4>
+                <p>
+                  Na Mastergol, a comunicação vai além de informar: é construir
+                  confiança. Mantemos atletas e famílias atualizados sobre
+                  conquistas, orientações e progresso, criando um vínculo
+                  próximo e transparente que fortalece a parceria na formação de
+                  cada jovem.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="card-marketing" id="card-4p">
+          <div class="card-header">4P</div>
+          <div class="card-content">
+            <ul>
+              <li>
+                <h4>Produto – Formação completa do atleta</h4>
+                <p>
+                  A Mastergol não é uma escolinha de futebol, é uma experiência
+                  completa de desenvolvimento, que inclui treinamento físico e
+                  técnico, acompanhamento médico e nutricional, suporte
+                  psicológico e preparação para oportunidades no futebol
+                  profissional. Cada jovem recebe atenção individualizada para
+                  crescer dentro e fora de campo.
+                </p>
+              </li>
+              <li>
+                <h4>Preço – Investimento que gera oportunidades</h4>
+                <p>
+                  Nosso preço reflete a qualidade e especialização do trabalho,
+                  oferecendo mais que treinos: preparo físico, apoio psicológico
+                  e oportunidades reais no futebol. Com um modelo justo e
+                  sustentável, garantimos acesso a estrutura profissional e
+                  ainda ampliamos oportunidades por meio de bolsas e captação de
+                  talentos em escolas públicas. O valor investido não é apenas
+                  no esporte, mas no desenvolvimento completo do atleta, o que
+                  nos torna referência no setor.
+                </p>
+              </li>
+              <li>
+                <h4>Praça – Presença e acessibilidade</h4>
+                <p>
+                  A Mastergol vai até onde os talentos estão, especialmente em
+                  escolas públicas, identificando jovens com potencial e
+                  oferecendo bolsas. Além disso, a inscrição é simples pelo
+                  site, e acompanhamos nossos atletas também pelas redes
+                  sociais, como o Instagram, garantindo proximidade e facilidade
+                  no acesso ao programa.
+                </p>
+              </li>
+              <li>
+                <h4>Promoção – Comunicação e divulgação eficiente</h4>
+                <p>
+                  A divulgação da Mastergol conecta atletas, famílias e
+                  parceiros. Mantemos comunicação transparente e motivadora,
+                  compartilhando conquistas e orientações em todas as etapas.
+                  Através do site, Instagram e eventos presenciais, fortalecemos
+                  a marca e inspiramos confiança nos jovens e nas famílias.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- seção do Organograma -->
+
+    <section id="organograma" class="organograma-section py-5">
+  
+    <!-- Imagem do organograma -->
+    <div class="organograma-imagem fade-in">
+      <img src="Midia\Organograma Mastergol FINAL REAL (2560 x 1440 px).png" alt="Organograma Mastergol" class="img-fluid">
+    </div>
+  </div>
+</section>
+
+
+<section id="tabela-cargos" >
   <div class="container">
-    <!-- História -->
-    <div class="mvv-section fade-in mb-4">
-      <h3 classe="title-historiaMVV">História</h3>
-      <p>
-        Criada em 2017 por Leonardo Henrique, ex-goleiro do Paulista de Jundiaí, Santos e Red Bull Bragantino, a assessoria nasceu com o objetivo de oferecer oportunidades para jovens atletas de todas as classes econômicas. Desde então, temos crescido de forma sólida, tornando-nos referência no desenvolvimento de talentos no futebol brasileiro, sempre prezando pela formação, disciplina e excelência.
-      </p>
-    </div>
-
-    <!-- Missão -->
-    <div class="mvv-section fade-in mb-4">
-      <h3>Missão</h3>
-      <p>
-        Formar cidadãos e atletas preparados para os desafios dentro e fora dos campos. Investimos em avaliações técnicas, acompanhamento físico e psicológico, e mantemos parcerias com clubes, empresários e instituições de ensino, garantindo suporte completo para o desenvolvimento de cada jovem talento.
-      </p>
-    </div>
-
-    <!-- Visão -->
-    <div class="mvv-section fade-in mb-4">
-      <h3>Visão</h3>
-      <p>
-        Ser referência nacional na formação de atletas, reconhecidos por excelência, ética e resultados. Queremos criar oportunidades reais para todos os atletas, independentemente da classe social, tornando-nos modelo de desenvolvimento profissional e humano no futebol.
-      </p>
-    </div>
-
-    <!-- Valores -->
-    <div class="mvv-section fade-in mb-4">
-      <h3>Valores</h3>
-      <p>
-         Priorizamos o compromisso com o desenvolvimento integral do atleta, garantindo que cada jovem tenha a melhor oportunidade de sucesso.
-      </p>
-      <ul id="topicos-valores" class="valores-list">
-    <li><i class="fas fa-heart heart"></i><strong class="title-valores">Ética e transparência:</strong> Atuamos de forma clara e honesta em todas as nossas atividades.</li>
-  <li><i class="fas fa-handshake handshake"></i><strong class="title-valores">Respeito a todos:</strong> Valorizamos o apoio familiar e os objetivos individuais de cada atleta.</li>
-  <li><i class="fas fa-users people"></i><strong class="title-valores">Inclusão e disciplina:</strong> Promovemos oportunidades iguais e incentivamos a disciplina dentro e fora dos campos.</li>
-  <li><i class="fas fa-trophy trophy"></i><strong class="title-valores">Excelência e oportunidades:</strong> Buscamos sempre oferecer o melhor em treinamento, acompanhamento e chances de crescimento.</li>
-  </ul>
+    <h2>Descrição de Cargos e Funções</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped">
+        <thead class="table-primary">
+          <tr>
+            <th>Área</th>
+            <th>Cargo</th>
+            <th>Função</th>
+            <th>Salário</th>
+            <th>CBO</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Diretoria / Gestão</td>
+            <td>CEO / Diretor Executivo</td>
+            <td>Responsável por todas as decisões estratégicas da empresa. Representa a empresa junto a patrocinadores e parceiros.</td>
+            <td class="salario">15000</td>
+            <td class="cbo">1210-10</td>
+          </tr>
+          <tr>
+            <td>Diretoria / Gestão</td>
+            <td>Diretor Administrativo / Financeiro</td>
+            <td>Controle financeiro (receitas, despesas, planos dos atletas). Gestão de contratos e documentos. Apoio à diretoria executiva nas decisões estratégicas.</td>
+            <td class="salario">12000</td>
+            <td class="cbo">1231-10</td>
+          </tr>
+          <tr>
+  <td>Diretoria / Financeiro</td>
+  <td>Assistente Financeiro</td>
+  <td>Auxilia no controle financeiro da empresa, organização de pagamentos, recebimentos, contas a pagar e a receber, e apoio à diretoria financeira.</td>
+  <td class="salario">3500</td>
+  <td class="cbo">4131-10</td>
+</tr>
+          <tr>
+            <td>Área Técnica / Esporte</td>
+            <td>Coordenador Técnico</td>
+            <td>Planeja o treinamento e desenvolvimento dos jovens atletas. Supervisiona treinadores, preparadores físicos, psicólogos e profissionais de saúde.</td>
+            <td class="salario">8000</td>
+            <td class="cbo">2241-35</td>
+          </tr>
+          <tr>
+            <td>Área Técnica / Esporte</td>
+            <td>Treinador / Preparador Físico</td>
+            <td>Responsável pelo treinamento físico e técnico dos atletas. Cria planos de treino individualizados.</td>
+            <td class="salario">4500</td>
+            <td class="cbo">2241-20</td>
+          </tr>
+          <tr>
+            <td>Área Técnica / Esporte</td>
+            <td>Psicólogo Esportivo</td>
+            <td>Apoio psicológico e motivacional aos atletas. Trabalha aspectos de concentração, confiança e resiliência.</td>
+            <td class="salario">5000</td>
+            <td class="cbo">2515-15</td>
+          </tr>
+          <tr>
+            <td>Área Técnica / Esporte</td>
+            <td>Nutricionista</td>
+            <td>Planeja alimentação e suplementação dos atletas. Monitora performance e composição corporal.</td>
+            <td class="salario">4500</td>
+            <td class="cbo">2237-10</td>
+          </tr>
+          <tr>
+            <td>Área Técnica / Esporte</td>
+            <td>Fisioterapeuta / Médico Esportivo</td>
+            <td>Prevenção e tratamento de lesões. Acompanhamento da saúde física dos atletas.</td>
+            <td class="salario">6000</td>
+            <td class="cbo">2236-55</td>
+          </tr>
+          <tr>
+            <td>Área Técnica / Esporte</td>
+            <td>Coordenador de Saúde (Médico)</td>
+            <td>Coordena toda a equipe de saúde, define protocolos médicos, supervisão de fisioterapeutas e acompanhamento de atletas.</td>
+            <td class="salario">8000</td>
+            <td class="cbo">2231-46</td>
+          </tr>
+          <tr>
+            <td>Área Comercial / Marketing</td>
+            <td>Gerente de Marketing</td>
+            <td>Planeja campanhas promocionais da empresa. Cria conteúdo para redes sociais, vídeos, jingle e folders de propaganda.</td>
+            <td class="salario">6500</td>
+            <td class="cbo">142315</td>
+          </tr>
+          <tr>
+            <td>Área Comercial / Marketing</td>
+            <td>Analista de Comunicação / Social Media</td>
+            <td>Gerencia redes sociais e interação com o público. Cria postagens, vídeos curtos e atualizações sobre os atletas.</td>
+            <td class="salario">4000</td>
+            <td class="cbo">2534-05</td>
+          </tr>
+          <tr>
+            <td>Área Comercial / Marketing</td>
+            <td>Social Media - Auxiliar</td>
+            <td>Suporte na criação de conteúdos, agendamento de postagens e interação com seguidores.</td>
+            <td class="salario">2500</td>
+            <td class="cbo">1423-20</td>
+          </tr>
+          <tr>
+            <td>Área Comercial / Marketing</td>
+            <td>Captador de Talentos / Scout</td>
+            <td>Identifica jovens promissores em clubes, escolinhas e competições. Faz contato com atletas e familiares para apresentar a assessoria.</td>
+            <td class="salario">3500</td>
+            <td class="cbo">3772-20</td>
+          </tr>
+          <tr>
+            <td>Área de Apoio / Administrativo</td>
+            <td>Assistente Administrativo</td>
+            <td>Auxilia na organização de agendas, reuniões e documentos. Apoio na comunicação interna e externa.</td>
+            <td class="salario">2800</td>
+            <td class="cbo">411010</td>
+          </tr>
+          <tr>
+            <tr>
+  <td>Área de Apoio / Administrativo</td>
+  <td>Analista de RH</td>
+  <td>Responsável por processos de recrutamento, seleção, desenvolvimento de colaboradores, folha de pagamento e benefícios.</td>
+  <td class="salario">4000</td>
+  <td class="cbo">2524-05</td>
+</tr>
+  <td>Área de Apoio / Administrativo</td>
+  <td>Assistente de RH</td>
+  <td>Auxilia nos processos de recrutamento, folha de pagamento, benefícios e organização interna do setor de Recursos Humanos.</td>
+  <td class="salario">2800</td>
+  <td class="cbo">4110-10</td>
+</tr>
+          <tr>
+            <td>Área de Apoio / Administrativo</td>
+            <td>Designer / Criativo</td>
+            <td>Criação de logotipo, folder, vídeos e materiais visuais da empresa.</td>
+            <td class="salario">3000</td>
+            <td class="cbo">2624-10</td>
+          </tr>
+          <tr>
+            <td>Área de Apoio / Administrativo</td>
+            <td>Recepcionista</td>
+            <td>Atendimento a visitantes, organização de agenda da recepção, controle de entrada e saída de pessoas.</td>
+            <td class="salario">2300</td>
+            <td class="cbo">4221-05</td>
+          </tr>
+          <tr>
+            <td>Área de Apoio / Administrativo</td>
+            <td>Auxiliar de Limpeza</td>
+            <td>Limpeza e manutenção da sede física da empresa, garantindo ambiente adequado para funcionários e atletas.</td>
+            <td class="salario">1800</td>
+            <td class="cbo">5143-20</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
 
- <!-- Serviços completos -->
-<section class="servicos-section-complets">
-  <h2>Nossos Serviços</h2>
-
-  <div class="servicos-container" id="servicosContainer">
-    <!-- Os cards serão inseridos aqui pelo JS -->
-  </div>
-
-  <div class="navegacao">
-    <button id="anterior">Anterior</button>
-    <button id="proximo">Próximo</button>
-  </div>
-</section>
 
 
-
+  
 
     <!-- Rodapé / contato estilizado com Bootstrap e Font Awesome -->
-<footer class="footer" id="contato">
-  <div class="container">
-    <div class="row align-items-center">
+    <footer class="footer" id="contato">
+      <div class="container">
+        <div class="row align-items-center">
+          <!-- Esquerda: Logo + frase -->
+          <div class="col-md-4 footer-left">
+            <img
+              src="Midia/Gemini_Generated_Image-Mastergol-Logo4.png"
+              alt="Logo Mastergol"
+              class="footer-logo"
+              width="200"
+            />
+            <p>
+              Mastergol Assessoria Esportiva<br />Transformando talento em
+              conquistas
+            </p>
+          </div>
 
-      <!-- Esquerda: Logo + frase -->
-      <div class="col-md-4 footer-left">
-        <img src="Midia/Gemini_Generated_Image-Mastergol-Logo4.png" alt="Logo Mastergol" class="footer-logo" width="200">
-        <p>Mastergol Assessoria Esportiva<br>Transformando talento em conquistas</p>
+          <!-- Direita: Contato -->
+          <div class="col-md-8 footer-right">
+            <h5>Contato</h5>
+            <div class="contact-item">
+              <i class="fas fa-map-marker-alt"></i> Fazenda Grande, Avenida
+              Henrique Brunini - Jundiaí - SP, 13212-405
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i> (11) 98774-6375
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i> mastergol_assesoriaesportiva
+            </div>
+            <div class="contact-item">
+              <i class="fab fa-instagram"></i>
+              <a
+                href="https://www.instagram.com/mastergol_assesoriaesportiva"
+                target="_blank"
+                style="color: #fff; text-decoration: none"
+                >@mastergol_assessoria</a
+              >
+            </div>
+          </div>
+        </div>
+
+        <!-- Linha final -->
+        <div class="bottom-line">
+          © 2025 Mastergol Assessoria Esportiva | CNPJ: 22.347.987/0001-34
+        </div>
       </div>
-
-      <!-- Direita: Contato -->
-      <div class="col-md-8 footer-right">
-        <h5>Contato</h5>
-        <div class="contact-item"><i class="fas fa-map-marker-alt"></i> Fazenda Grande, Avenida Henrique Brunini - Jundiaí - SP, 13212-405</div>
-        <div class="contact-item"><i class="fas fa-phone"></i> (11) 98774-6375</div>
-        <div class="contact-item"><i class="fas fa-envelope"></i> mastergol_assesoriaesportiva
-</div>
-        <div class="contact-item"><i class="fab fa-instagram"></i> <a href="https://instagram.com/seu_instagram" target="_blank" style="color:#fff; text-decoration:none;">@mastergol_assessoria</a></div>
-      </div>
-
-    </div>
-
-    <!-- Linha final -->
-    <div class="bottom-line">
-      © 2025 Mastergol Assessoria Esportiva | CNPJ: 22.347.987/0001-34
-    </div>
-  </div>
-</footer>
+    </footer>
   </body>
 </html>
-
-
-
-
-
-

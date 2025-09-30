@@ -1,4 +1,4 @@
-// Lista de serviços
+// ===================== Lista de Serviços =====================
 const servicos = [
   {
     titulo: "Treinamento Físico",
@@ -38,21 +38,91 @@ const servicos = [
   {
     titulo: "Participação em Campeonatos",
     imagem: "Midia/Gemini_Generated_Image_Campeonatos.png",
-    descricao: "Promovemos a participação em campeonatos internos e externos, proporcionando experiência competitiva real. Essa prática permite que os atletas se destaquem, sejam observados por clubes e desenvolvam habilidades importantes para a carreira profissional"
+    descricao: "Promovemos a participação em campeonatos internos e externos, proporcionando experiência competitiva real. Essa prática permite que os atletas se destaquem, sejam observados por clubes e desenvolvam habilidades importantes para a carreira profissional."
   }
 ];
 
-// Configurações
-const container = document.getElementById("servicosContainer");
+// ===================== Fade-in com IntersectionObserver =====================
+function isInViewport(element) {
+  const rect = element.getBoundingClientRect();
+  return rect.top <= (window.innerHeight || document.documentElement.clientHeight);
+}
+
+function checkFadeIn() {
+  const elementos = document.querySelectorAll('.fade-in');
+  elementos.forEach(el => {
+    if (isInViewport(el)) {
+      el.classList.add('show');
+    }
+  });
+}
+
+window.addEventListener('scroll', checkFadeIn);
+window.addEventListener('load', checkFadeIn);
+
+document.addEventListener("DOMContentLoaded", () => {
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("visible");
+        observer.unobserve(entry.target); // anima apenas uma vez
+      }
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll(".card, .service-card-advanced").forEach(card => observer.observe(card));
+});
+
+// ===================== Paginação e Renderização de Cards =====================
 let indiceAtual = 0;
 const cardsPorPagina = 4;
 
-// Função para renderizar os cards
 function renderCards() {
+  const container = document.getElementById("servicosContainer");
   container.innerHTML = "";
-  const inicio = indiceAtual * cardsPorPagina;
-  const fim = inicio + cardsPorPagina;
-  const grupo = servicos.slice(inicio, fim);
+
+  const start = indiceAtual * cardsPorPagina;
+  const end = start + cardsPorPagina;
+  const subset = servicos.slice(start, end);
+
+  subset.forEach(servico => {
+    const card = document.createElement("div");
+    card.classList.add("card", "fade-in");
+    card.innerHTML = `
+      <img src="${servico.imagem}" alt="${servico.titulo}" class="card-img">
+      <h3>${servico.titulo}</h3>
+      <p>${servico.descricao}</p>
+    `;
+    container.appendChild(card);
+  });
+
+  // Aplica fade-in e clique expandir nos cards recém-criados
+  checkFadeIn();
+  enableCardClick();
+}
+
+// Navegação
+document.getElementById("proximo").addEventListener("click", () => {
+  indiceAtual = (indiceAtual + 1) % Math.ceil(servicos.length / cardsPorPagina);
+  renderCards();
+});
+
+document.getElementById("anterior").addEventListener("click", () => {
+  indiceAtual = (indiceAtual - 1 + Math.ceil(servicos.length / cardsPorPagina)) % Math.ceil(servicos.length / cardsPorPagina);
+  renderCards();
+});
+
+// ===================== Clique para expandir cards =====================
+function enableCardClick() {
+  const allCards = document.querySelectorAll(".card, .service-card-advanced");
+  allCards.forEach(card => {
+    card.addEventListener("click", () => {
+      // Fecha qualquer outro card expandido
+      allCards.forEach(c => { if (c !== card) c.classList.remove("expanded"); });
+      // Alterna o estado do card clicado
+      card.classList.toggle("expanded");
+    });
+  });
 
   grupo.forEach(servico => {
     const card = document.createElement("div");
@@ -67,36 +137,37 @@ function renderCards() {
     });
     container.appendChild(card);
   });
-
-  // Dispara o fade-in logo após renderizar
-  handleFadeIn();
 }
 
-// Função para o fade-in
-function handleFadeIn() {
-  const fadeElements = document.querySelectorAll(".fade-in");
-  fadeElements.forEach(el => {
-    const top = el.getBoundingClientRect().top;
-    const screen = window.innerHeight / 1.2;
-    if(top < screen){
-      el.classList.add("visible");
+// ===================== Inicialização =====================
+document.addEventListener("DOMContentLoaded", () => {
+  renderCards();      // Renderiza primeiros cards
+  enableCardClick();  // Ativa clique para cards estáticos (se houver)
+});
+
+const cardHeaders = document.querySelectorAll('#marketing .card-header');
+
+cardHeaders.forEach(header => {
+  header.addEventListener('click', () => {
+    const content = header.nextElementSibling;
+
+    document.querySelectorAll('#marketing .card-content').forEach(c => {
+      if (c !== content) c.style.maxHeight = null; // fecha outros cards
+    });
+
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null; // fecha o card clicado
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px"; // abre o card
     }
   });
-}
-
-// Navegação
-document.getElementById("proximo").addEventListener("click", () => {
-  indiceAtual = (indiceAtual + 1) % Math.ceil(servicos.length / cardsPorPagina);
-  renderCards();
 });
 
-document.getElementById("anterior").addEventListener("click", () => {
-  indiceAtual = (indiceAtual - 1 + Math.ceil(servicos.length / cardsPorPagina)) % Math.ceil(servicos.length / cardsPorPagina);
-  renderCards();
+
+document.querySelectorAll('#tabela-cargos td.salario').forEach(td => {
+  const valor = parseFloat(td.textContent);
+  td.textContent = valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 });
 
-// Evento scroll para fade-in
-document.addEventListener("scroll", handleFadeIn);
 
-// Renderiza os primeiros cards
-renderCards();
+
