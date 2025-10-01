@@ -1336,12 +1336,19 @@ a {
 #marketing {
   padding: 40px;
   background-color: #d5f0ff;
+  margin-bottom: 80px;
 }
 
+#marketing h2 {
+  color: #0867dc !important;
+  font-size: 50px !important;
+}
+ 
 .marketing-cards {
   display: flex;
   gap: 60px; /* aumenta a distância entre os cards */
   justify-content: center;
+  margin-bottom: 100px;
 }
 
 #marketing .card-marketing {
@@ -1387,6 +1394,13 @@ a {
   background-color: #d0f5ffa4;
 }
 
+.organograma-section h2 {
+  color: #0867dc;
+  font-size: 50px;
+
+
+}
+
 .organograma-imagem img {
   max-width: 100%;   /* Ajusta a largura para caber na tela */
   height: auto;      /* Mantém proporção da imagem */
@@ -1398,6 +1412,13 @@ a {
 #tabela-cargos .table-responsive {
   overflow-x: auto;
 }
+
+#tabela-cargos h2 {
+  color: #0867dc;
+  font-size: 50px;
+  margin-top: 150px;
+}
+
 
 /* Tabela principal */
 #tabela-cargos table {
@@ -1455,7 +1476,7 @@ a {
 #tabela-cargos td.cbo {
   white-space: nowrap;
   color: #000000;
-  font-size: 50;
+  font-size: 25px;
 }
 
 /* Responsivo para telas pequenas */
@@ -1478,5 +1499,42 @@ a {
   color: #ffffff;
 }
 
+/* Fluxograma */
 
+#fluxograma {
+    font-family: Arial, sans-serif;
+    background: hsl(195, 100%, 93%);
+    padding: 20px;
+    margin-top: 150px;
+  }
 
+  #fluxograma h3 {
+    color: #0066ff;
+  }
+
+  
+.fluxograma-section {
+  background-color: #d0f5ffa4;
+}
+
+.fluxograma-section h2 {
+  color: #0867dc;
+  font-size: 50px;
+}
+
+.fluxograma-section h3 {
+  text-align: center;
+}
+
+.fluxograma-imagem img {
+  max-width: 100%;   /* Ajusta a largura para caber na tela */
+  height: auto;      /* Mantém proporção da imagem */
+  border-radius: 8px; /* Opcional, para dar leve arredondado */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Opcional, deixa mais elegante */
+}
+
+.video-container {
+  display: flex;
+  justify-content: center; /* centraliza */
+  margin-top: 20px;
+}
