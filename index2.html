@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ODS Mastergol</title>
+<style>
+.ods-wrapper {
+  margin-bottom: 50px;
+}
+
+.ods-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Zig-zag: aplica só nas caixas dentro de .ods-wrapper */
+.ods-wrapper:nth-child(even) .ods-item {
+  flex-direction: row-reverse;
+}
+
+.ods-img {
+  width: 45%;
+  object-fit: cover;
+  transition: transform 0.5s;
+}
+
+.ods-img:hover {
+  transform: scale(1.05);
+}
+
+.ods-text {
+  width: 55%;
+  padding: 20px;
+}
+
+.ods-graph {
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto 0 auto;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+</style>
+</head>
+<body>
+
+<section class="ods-section">
+  <h2 class="section-title">ODS Seguidos pela Mastergol</h2>
+
+  <!-- ODS 3 -->
+  <div class="ods-wrapper">
+    <div class="ods-item">
+      <img src="ods3.png" alt="ODS 3 Saúde e Bem-estar" class="ods-img">
+      <div class="ods-text">
+        <h3>ODS 3 - Saúde e Bem-estar</h3>
+        <p>A Mastergol promove treinamentos físicos e psicológicos para jovens atletas...</p>
+      </div>
+    </div>
+    <img src="grafico_ods3.png" alt="Gráfico ODS 3" class="ods-graph">
+  </div>
+
+  <!-- ODS 4 -->
+  <div class="ods-wrapper">
+    <div class="ods-item">
+      <img src="ods4.png" alt="ODS 4 Educação de Qualidade" class="ods-img">
+      <div class="ods-text">
+        <h3>ODS 4 - Educação de Qualidade</h3>
+        <p>Oferecemos cursos e workshops de desenvolvimento pessoal e esportivo...</p>
+      </div>
+    </div>
+    <img src="grafico_ods4.png" alt="Gráfico ODS 4" class="ods-graph">
+  </div>
+
+  <!-- Mais ODS seguem o mesmo padrão -->
+</section>
+
+
+<script>
+// Fade-in ao scroll
+const odsItems = document.querySelectorAll('.ods-item');
+const odsGraphs = document.querySelectorAll('.ods-graph');
+
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.animation = 'fadeInUp 1s forwards';
+      const graph = entry.target.nextElementSibling;
+      if (graph && graph.classList.contains('ods-graph')) {
+        graph.classList.add('visible');
+      }
+    }
+  });
+}, { threshold: 0.2 });
+
+odsItems.forEach(item => observer.observe(item));
+</script>
+
+</body>
+</html>
